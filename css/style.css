@@ -1,0 +1,61 @@
+body {
+    background-color: #888;
+    margin: 0;
+}
+
+.banner {
+    margin-top: 0;
+    padding: 40px;
+    background-color: orange;
+}
+
+input, select, button {
+    border-color: gray;
+    background-color: #ccc;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 170px;
+}
+
+label {
+    float:none;
+    margin-bottom: 6px;
+}
+
+.expyear {
+    width: 5px;
+}
+
+#expyear {
+    float: none;
+}
+
+form {
+    width: 35%;
+    margin-left: 35%;
+    background-color: #aaa;
+    padding: 5px;
+    padding-bottom: 20%;
+}
+
+ul {
+    width: 40%;
+    margin-left: 30%;
+    background-color: #aaa;
+    padding: 10px;
+    padding-bottom: 5%;
+    list-style-type: none;
+}
+
+li {
+    padding: 2px 0 3px 2px;
+}
+
+fieldset {
+    border-color: black;
+    margin-bottom: 10px;
+}

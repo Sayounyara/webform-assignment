@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Amos Chamberlain
+            20/05/2022
+            Assessment 1
+        -->
+        <title>Form</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1 class="banner"></h1>
+        <form name="form" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Customer details</legend>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="fnameerror"></span><br>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="lnameerror"></span><br>
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="postcodeerror"></span><br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="emailerror"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment details</legend>
+                <label for="ccard">Credit card</label>
+                <select id="ccard" name="ccard">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select><br>
+                <label for="cnumber">Card number</label>
+                <input type="text" id="cnumber" name="cnumber" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="cnumbererror"></span><br>
+                <label for="ccv">CCV</label>
+                <input type="text" id="ccv" name="ccv" onfocus="onFocus(this)" onblur="onBlur(this)"><span id="ccverror"></span><br>
+                <label for="expmonth">Expiry MM/YY</label>
+                <select id="expmonth" name="expmonth">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <label class="expyear" for="expyear">/</label>
+                <select id="expyear" name="expyear">
+                    <option value="2022">22</option>
+                    <option value="2023">23</option>
+                    <option value="2024">24</option>
+                    <option value="2025">25</option>
+                    <option value="2026">26</option>
+                </select><span id="experror"></span>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <button type="button" onclick="toHelp()">Help</button><br><br>
+
+            <button type="button" onclick="toOtherWebsites()">Go to other websites</button>
+        </form>
+
+        <script src="js/form.js">
+        </script>
+    </body>
+</html>
